@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="530.0" prefWidth="695.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.StudentController">
+   <children>
+      <Pane prefHeight="530.0" prefWidth="695.0">
+         <children>
+            <Label layoutX="26.0" layoutY="14.0" text="StudentID" />
+            <Label layoutX="24.0" layoutY="63.0" text="Ditt eksamensresultat" />
+            <TextField fx:id="input" layoutX="24.0" layoutY="31.0" promptText="Skriv inn tall" />
+            <Button fx:id="godta" layoutX="406.0" layoutY="95.0" mnemonicParsing="false" onAction="#godta" text="Godta" textFill="#13c846" />
+            <Label />
+            <ListView fx:id="listestudier" layoutX="22.0" layoutY="412.0" prefHeight="111.0" prefWidth="115.0" />
+            <Label layoutX="19.0" layoutY="175.0" text="Oversikt karakter i klassen" />
+            <ListView fx:id="listeplasser" layoutX="140.0" layoutY="412.0" prefHeight="111.0" prefWidth="72.0" />
+            <Label layoutX="60.0" layoutY="396.0" text="Studier" />
+            <ListView fx:id="listekarakterklassen" layoutX="21.0" layoutY="251.0" prefHeight="144.0" prefWidth="53.0" />
+            <Button fx:id="knapp" layoutX="182.0" layoutY="19.0" mnemonicParsing="false" onAction="#initialize" text="Sjekk eksamensresultat" />
+            <ListView fx:id="listefag" layoutX="28.0" layoutY="97.0" prefHeight="72.0" prefWidth="103.0" />
+            <Button fx:id="klage" layoutX="408.0" layoutY="131.0" mnemonicParsing="false" onAction="#klage" text="Klage" textFill="#e82121" />
+            <ListView fx:id="listeantallR1" layoutX="76.0" layoutY="251.0" prefHeight="144.0" prefWidth="79.0" />
+            <ListView fx:id="listepoeng" layoutX="130.0" layoutY="97.0" prefHeight="72.0" prefWidth="72.0" />
+            <Label layoutX="484.0" layoutY="207.0" text="Gjennomsnitt klassen" />
+            <Label layoutX="298.0" layoutY="396.0" text="Studier du kan søke" />
+            <ListView fx:id="listekarakter" layoutX="202.0" layoutY="97.0" prefHeight="72.0" prefWidth="72.0" />
+            <Label layoutX="69.0" layoutY="80.0" text="Fag" />
+            <Label layoutX="149.0" layoutY="80.0" text="Poeng" />
+            <Label layoutX="216.0" layoutY="80.0" text="Karakter" />
+            <Label layoutX="26.0" layoutY="231.0" text="Karakter" />
+            <Label layoutX="108.0" layoutY="207.0" text="Antall karakter i klassen" />
+            <Label layoutX="158.0" layoutY="396.0" text="Plasser" />
+            <ListView fx:id="minestudier" layoutX="290.0" layoutY="412.0" prefHeight="111.0" prefWidth="115.0" />
+            <Button fx:id="reset" layoutX="180.0" layoutY="47.0" mnemonicParsing="false" onAction="#reset" text="Reset" />
+            <Label layoutX="91.0" layoutY="231.0" text="Matte R1" />
+            <Label layoutX="260.0" layoutY="231.0" text="Fysikk" />
+            <Label layoutX="170.0" layoutY="231.0" text="Matte R2" />
+            <ListView fx:id="listefaggjennomsnitt" layoutX="420.0" layoutY="251.0" prefHeight="72.0" prefWidth="103.0" />
+            <ListView fx:id="listegjennomsnittpoeng" layoutX="523.0" layoutY="251.0" prefHeight="72.0" prefWidth="72.0" />
+            <Label layoutX="461.0" layoutY="231.0" text="Fag" />
+            <ListView fx:id="listegjennomsnittkarakter" layoutX="597.0" layoutY="251.0" prefHeight="72.0" prefWidth="72.0" />
+            <Label layoutX="542.0" layoutY="231.0" text="Poeng" />
+            <Label layoutX="611.0" layoutY="231.0" text="Karakter" />
+            <ListView fx:id="listeantallR2" layoutX="155.0" layoutY="251.0" prefHeight="144.0" prefWidth="79.0" />
+            <ListView fx:id="listeantallFysikk" layoutX="235.0" layoutY="251.0" prefHeight="144.0" prefWidth="79.0" />
+            <ListView fx:id="egetsnittpoeng" layoutX="274.0" layoutY="97.0" prefHeight="25.0" prefWidth="38.0" />
+            <ListView fx:id="minplass" layoutX="212.0" layoutY="412.0" prefHeight="25.0" prefWidth="79.0" />
+            <Label layoutX="298.0" layoutY="80.0" text="Snitt" />
+            <Label layoutX="228.0" layoutY="396.0" text="Din plass" />
+            <ListView fx:id="egetsnittkarakter" layoutX="314.0" layoutY="97.0" prefHeight="25.0" prefWidth="36.0" />
+            <TextField fx:id="årstall" layoutX="356.0" layoutY="32.0" promptText="Skriv inn årstall" />
+            <Label layoutX="356.0" layoutY="11.0" text="Årskull - år:" />
+            <Button fx:id="lagre" layoutX="523.0" layoutY="16.0" mnemonicParsing="false" onAction="#writeController" text="Lagre som &quot;Mine karakterer&quot;" />
+            <Button fx:id="skrive" layoutX="523.0" layoutY="44.0" mnemonicParsing="false" onAction="#readController" text="Hent &quot;Mine karakterer&quot;" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
